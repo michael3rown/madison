@@ -1,0 +1,243 @@
+/* Blog */
+
+/* blogs listings */             
+.blogList ul {
+    margin: 0 0 1.5em !important; 
+    padding: 0 !important;    
+}
+    .blogList ul li {      
+        margin: 0 0 2em !important; 
+        padding: 0 !important;
+    }              
+        
+    .blogList ul li .postInfo {
+        margin: 0 0 20px !important; 
+        font-size: 14px; 
+        color: #aaa; 
+        font-style: italic;  
+    }    
+        .blogList ul li .postInfo a {
+            color: #bbb;
+        }
+                
+                
+    .rss,
+    .blogBack {
+        display: none;
+    }   
+    
+                                                                         
+    /*  for blog/calendar list items to still have list bullets */    
+    .blogList ul li ul, 
+    .eventsList ul li ul, 
+    .blogList ol li ul, 
+    .eventsList ol li ul {
+        margin: 0 0 1.5em 45px !important; 
+    }  
+    .blogList ul li li, 
+    .eventsList ul li li {
+        list-style: circle !important;
+        margin: 0 0 8px !important; 
+    }                                     
+
+
+    
+/* pagination */
+div.pagination {
+    float: none;
+}
+
+    div.pagination ul,
+    #pagination {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: inline-block;
+        float: none;
+        margin: 60px 0 0 !important;
+        width: auto;
+        text-align: center;
+        padding: 0 !important;
+        clear: both;
+    }
+
+        div.pagination ul li,
+        #pagination li {
+            border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+            color: #999;
+            cursor: default;
+            display: block;
+            float: left;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            line-height: 1em !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            text-transform: uppercase;
+        }
+
+        div.pagination ul li.page.current,
+        #pagination li.selected {
+            color: #333;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 15px !important;
+        }
+        
+        div.pagination ul li a,
+        #pagination li a {
+            color: #999;
+            display: block;
+            padding: 15px !important;
+            border: none !important;
+        }
+
+
+
+/* post detail page */  
+.postViewInfo {
+    border: none !important;  
+    padding: 0 !important;    
+    color: #bbb !important;  
+    font-size: 14px !important; 
+    font-style: italic; 
+}     
+    .postViewTags a {  
+        margin-left: 2px !important;
+    }   
+    .postViewTags li {  
+        border: none !important;
+    }  
+
+
+
+
+/* blog comments */ 
+.commentsHead {
+    padding: 55px 0 0;
+    text-transform: uppercase;
+    font-size: 22px;
+}             
+    dt.comment {
+        background: transparent !important;
+        margin: 0 !important;
+        padding: 0 0 5px 0 !important;
+        border: none !important;
+        font-size: 13px;
+        font-weight: normal;
+        color: #bbb;   
+    }    
+        .comment a {
+            text-decoration: none; 
+            font-size: 18px;  
+            font-weight: 500;  
+        } 
+
+    dd.comment {                      
+        background: #fff !important;        
+        margin: 0 0 55px !important;   
+        border-bottom: none !important;  
+        padding: 0 0 20px !important; 
+    }                    
+        dd.comment .commentDate {
+            font-size: 13px; 
+            color: #bbb;    
+            margin-bottom: -5px !important;
+            padding-top: 10px !important;         
+        }  
+    
+        dd.comment:after { 
+            bottom: 100%; 
+            border: solid transparent; 
+            content: " "; 
+            height: 0; 
+            width: 0; 
+            position: absolute; 
+            pointer-events: none; 
+        } 
+
+
+
+/* comments form */
+.commentsForm {
+    clear: both;  
+    background: #efefef;
+    padding: 25px 25px 10px;     
+    max-width: 500px;
+    margin: 0 auto;
+}           
+    .addComment { 
+        padding: 15px 0 0;
+        text-transform: uppercase;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .commentsForm label, 
+    .commentsForm span {
+        font-weight: normal;
+        display: block;    
+        font-size: 15px;   
+        margin: 5px 15px 5px 0; 
+    } 
+        .comments .commentsForm h3.addComment + p + p + p + span {
+            margin-bottom: 0 !important;
+        }
+        .comments .commentsForm h3.addComment + p + p + p + span + br,
+        .comments .commentsForm h3.addComment + p + p + p + span + br + img + br + input + span {
+            display: none !important;
+        }
+
+    .commentsForm input, 
+    .commentsForm textarea { 
+        clear: both; 
+        background: #fff;
+        border: none;
+        padding: 9px 10px; 
+        width: 100% !important;  
+        border: 1px solid #ddd;
+    }         
+
+    .comments .commentsForm h3.addComment + p + p + p + span + br + img { 
+        border: 1px solid #ddd;
+    }
+
+    .comments .commentsForm h3.addComment + p + p + p + span + br + img + br + input {
+        width: 40% !important;
+        min-width: 100px;
+        margin: 10px 0 20px 0;
+    }
+    .comments .commentsForm h3.addComment + p + p + p + span + br + img + br + input + br {
+        width: 40% !important;
+        min-width: 100px;
+        margin: 10px 0 20px 0;
+    }
+
+    .commentsForm input.submitComment {  
+        font-family: "Raleway", "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+        background: #f28a57;
+        display: inline-block;
+        font-weight: 700;
+        color: #fff;
+        padding: 15px 40px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: normal;
+        border: none;
+        width: auto !important;
+
+        -webkit-transition: all 0.5s ease-in-out;
+           -moz-transition: all 0.5s ease-in-out;
+             -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;        
+    }
+        .commentsForm input.submitComment:hover {
+            background: #cc5e2c;
+        }
+
+    .commentsForm .note {
+        display: none;
+    }
+
+/* /Blog */

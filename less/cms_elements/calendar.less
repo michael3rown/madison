@@ -1,0 +1,161 @@
+/* Calendar */
+          
+/* calendar detail page */  
+.event .eventDate {
+    margin: 0 0 15px; 
+    font-size: 14px; 
+    color: #aaa; 
+    font-style: italic;
+} 
+    .eventTime {        
+        color: #bbb; 
+    }          
+
+.event .eventBack a {
+    display: none;
+} 
+
+
+
+/* event list */          
+.eventsList ul {
+    margin: 0 !important; 
+    padding: 0 !important; 
+    list-style: none;
+}
+    .eventsList ul li { 
+        margin: 0 0 25px !important; 
+        padding: 0 !important;
+        background-image: none;   
+    }
+    
+    .eventsList ul li > a {
+        text-decoration: none;
+        color: #6fb6ca;
+        line-height: 1.3;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: "Raleway", "Avenir Next", Avenir, "Helvetica Neue", sans-serif;
+    }
+        
+    .eventsList ul li .eventDate {
+        margin: 0 0 5px 0; 
+        font-size: 14px; 
+        color: #aaa; 
+        font-style: italic;
+    }         
+        .eventsList ul li .eventDate {
+            color: #bbb; 
+        }            
+
+                                        
+
+/* tabular */      
+.eventsCalendar {
+    margin: 0 0 60px; 
+    width: 100%;
+    position: relative;
+}        
+    .eventsCalendar table {
+        border: none; 
+        border-color: #efefef !important; 
+        background-color: #efefef;
+        width: 100%; 
+        margin: 0 !important;        
+    }         
+        .eventsCalendar table td {
+            padding: 0;
+        }    
+    
+    /* title and arrows */
+    .calendarTitle {
+        background: #efefef !important; 
+        height: 90px !important;
+        position: relative;
+    }        
+        .calendarTitle td {
+            font-weight: 700 !important;
+            color: #000 !important; 
+            background: #f1f1f1 !important; 
+            font-size: 17px !important; 
+            letter-spacing: 1px;   
+            text-transform: uppercase;
+            padding: 20px 10px !important; 
+        }    
+        
+        .calendarNextPrevious:first-child a,
+        .calendarNextPrevious:last-child a  {
+            background: url(images/cal-arrow.png) top right no-repeat !important;
+            display: block;
+            text-indent: -9999px !important;
+            height: 40px;
+            width: 35px; 
+            top: 24px;
+            right: 10%;
+            position: absolute;
+            padding-top: 10px;
+            font-size: 12px;
+            text-transform: uppercase;
+            border: none !important;
+        }
+            .calendarNextPrevious:first-child a {
+                background: url(images/cal-arrow-left.png) top left no-repeat !important;
+                left: 10%;
+                right: auto;
+            }
+            
+                
+    /* monday thru friday */                        
+    .calendarDayHeader {
+        color: #999 !important;    
+        background: #fff !important;    
+        font-size: 12px; 
+        text-transform: uppercase; 
+        height: 1px; 
+        text-align: center !important; 
+        padding: 15px 0 !important;                   
+        border-color: #fff !important; 
+        border-top: 1px solid #eee !important;  
+        border-bottom: 1px solid #eee !important; 
+    }
+        
+    .eventsCalendar .eventTime {
+        font-style: italic;
+        display: block;
+        padding: 10px 0 0 !important;
+    } 
+         
+    .eventsCalendar .eventTime:before {
+        content: "" !important;
+    }
+    
+    .calendarWeekendDay,
+    .calendarOtherMonthDay,
+    .calendarDay,
+    .calendarToday {
+        vertical-align: top;
+        background: #fafafa !important;
+        border: 0 !important;
+        border-bottom: 1px solid #efefef !important;
+        padding: 1.5em .5em !important;
+        font-size: 12px;
+        line-height: 18px; 
+    }        
+        .calendarWeekendDay a,
+        .calendarOtherMonthDay a,
+        .calendarDay a,
+        .calendarToday a {
+            font-size: 14px;
+            color: #2e2e2e;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: -5px;
+            text-decoration: none;
+            font-weight: normal;
+        }
+        
+        .calendarOtherMonthDay {
+            color: #ccc !important;
+        }
+
+/* /Calendar */

@@ -1,0 +1,146 @@
+// Background Image
+
+.background-color(@color) when (iscolor(@color)) {
+	background-color: @color;
+}
+
+.background-image(@image; @position; @size; @repeat; @origin; @attachment) when (isurl(@image)), (@image = none) {
+	background-image: @image;
+	background-position: @position;
+	background-size: @size;
+	background-repeat: @repeat;
+	background-origin: @origin;
+	background-attachment: @attachment;
+}
+
+.background-image-only(@image) when (isurl(@image)), (@image = none) {
+	background-image: @image;
+}
+
+.background-image-specs(@position; @size; @repeat; @origin; @attachment) when (@repeat = repeat), (@repeat = repeat-x), (@repeat = repeat-y), (@repeat = no-repeat) {
+	background-position: @position;
+	background-size: @size;
+	background-repeat: @repeat;
+	background-origin: @origin;
+	background-attachment: @attachment;
+}
+
+// Clearfix
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Overflow
+
+.overflow-hidden() {
+	overflow: hidden;
+}
+
+// Typography
+
+.color(@color) when (iscolor(@color)) {
+	color: @color;
+}
+
+// Padding
+
+.vertical-padding(@value) {
+	padding-top: @value;
+	padding-bottom: @value;
+}
+
+.horizontal-padding(@value) {
+	padding-left: @value;
+	padding-right: @value;
+}
+
+// Border
+
+.border(@width; @color) when (iscolor(@color)) {
+	border: @width solid @color;
+}
+
+.top-border(@color) when (iscolor(@color)) {
+	border-bottom: 2px solid @color;
+}
+
+.rht-border(@color) when (iscolor(@color)) {
+	border-left: 2px solid @color;
+}
+
+.btm-border(@color) when (iscolor(@color)) {
+	border-bottom: 2px solid @color;
+}
+
+.lft-border(@color) when (iscolor(@color)) {
+	border-left: 2px solid @color;
+}
+
+// Margin
+
+.vertical-margin(@value) {
+	margin-top: @value;
+	margin-bottom: @value;
+}
+
+.horizontal-margin(@value) {
+	margin-left: @value;
+	margin-right: @value;
+}
+
+// Transitions
+
+.transition-all(@time: 0.35s) {
+	-webkit-transition: all @time ease-in-out; 
+	-moz-transition: all @time ease-in-out; 
+	-o-transition: all @time ease-in-out; 
+	-ms-transition: all @time ease-in-out; 
+	transition: all @time ease-in-out;
+}
+
+// Media Query Spacing
+
+.default-responsive-padding() {
+	@media screen and (max-width: @screen-lg) {
+		.horizontal-padding(8%);
+	}
+		
+	@media screen and (max-width: @screen-md) {
+		.horizontal-padding(6%);
+	}
+		
+	@media screen and (max-width: @screen-sm) {
+		.horizontal-padding(3%);
+	}
+}
+
+.default-responsive-margin() {
+	@media screen and (max-width: @screen-lg) {
+		.horizontal-margin(8%);
+	}
+		
+	@media screen and (max-width: @screen-md) {
+		.horizontal-margin(6%);
+	}
+		
+	@media screen and (max-width: @screen-sm) {
+		.horizontal-margin(3%);
+	}
+}
+
+// Columns
+
+// Overflow
+
+.mobile-column() {
+	float: none;
+	width: 100%;
+}

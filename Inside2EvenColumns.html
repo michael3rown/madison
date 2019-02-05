@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<$include virtual="head.inc"/$>
+
+<body id="base" class="inside" data-cmsadmin-layout-base="true">
+	
+	<!-- Wrapper -->
+	<div id="wrapper" data-cmsadmin-layout-wrapper="true">
+		
+		<$include virtual="header.inc"/$>
+		
+		<!-- Main -->
+		<main id="content" data-cmsadmin-layout-content="true">
+			
+			<section id="feature" class="one-column full-width">
+				
+				<!-- "Feature" Region -->
+				<div class="column">
+					<$region name="feature"$><$/region$>
+				</div>
+				<!-- /"Feature" Region -->
+				
+			</section>
+			
+			<section id="" class="two-even-columns">
+				
+				<!-- "Main" ("Two-Left") Region -->
+				<div class="column">
+					<$region name="main"$><$/region$>
+				</div>
+				<!-- /"Main" ("Two-Left") Region -->
+				
+				<!-- "Two-Right" Region -->
+				<div class="column">
+					 <$region name="twoRight"$><$/region$>
+				</div>
+				<!-- /"Two-Right" Region -->
+				
+			</section>
+			
+		</main>
+		<!-- /Main -->
+		
+		<$include virtual="footer.inc" /$>
+		
+	</div>
+	<!-- /Wrapper -->
+
+</body>
+
+</html>

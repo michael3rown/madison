@@ -1,0 +1,29 @@
+
+Creative License Agreement
+---------------------------------------------
+
+Copyright (c) 2010 - 2015 LightCMS
+All rights reserved.
+
+Redistribution and use of LightCMS's designs bearing this creative license agreement,
+with or without modification, are permitted provided that the following conditions are met:
+
+    * Any and all parts of the HTML/CSS, supporting graphic files, or material derived 
+	from those source materials are to be exclusively used on the LightCMS Content 
+	Management Systems. ANY OTHER USE IS STRICTLY PROHIBITED.
+
+    * Redistributions of HTML/CSS code must retain the above copyright notice, this list of 
+	conditions and the following disclaimer.
+
+    * Neither the name of LightCMS nor the names of its software products may be 
+	used to endorse or promote products or services derived from these source materials without the 
+	specific prior written permission of LightCMS or NetSuite.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+AND ANY EXPRESS OR IMPLIEDWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF 
+MERCHANTABILITY AND FITNESS FOR APARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE 
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FORANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, 
+OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOTLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESSINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, ORTORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IFADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

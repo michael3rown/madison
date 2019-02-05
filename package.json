@@ -1,0 +1,20 @@
+{
+  "name": "madison",
+  "version": "1.0.0",
+  "description": "Build of the Madison template for the LightCMS platform.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Brown",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-less": "^3.3.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

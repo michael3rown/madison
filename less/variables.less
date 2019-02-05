@@ -1,0 +1,370 @@
+// ========== GLOBAL ==========
+
+// Media Query Breakpoints
+
+@screen-lg: 1200px;
+@screen-md: 800px;
+@screen-sm: 640px;
+
+@nav-mobile: 1024px;
+
+// Fonts
+@sans: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+@serif: 'Merriweather', 'Georgia', serif;
+@cursive: cursive;
+@monotype: monospace;
+@icons: 'icons';
+
+@size: 16px;
+
+// Selections
+@selection-bkgd: rgb(243,138,81);
+@selection-color: rgb(0,0,0);
+
+// ----- Typography -----
+
+// Headings
+@h1-color: rgb(69,77,79);
+@h2-color: @h1-color;
+@h3-color: @h1-color;
+@h4-color: @h1-color;
+@h5-color: @h1-color;
+@h6-color: @h1-color;
+
+// hr
+@hr-color: rgb(204,204,204);
+
+// a
+@anchor-color: rgb(243,138,81);
+@anchor-hover-color: rgb(204,94,44);
+
+// Buttons
+@button-bkgd-color: rgb(243,138,81);
+@button-bkgd-hover-color: rgb(204,94,44);
+@button-font-color: rgb(255,255,255);
+@button-font-hover-color: @button-font-color;
+
+// ----- /Typography -----
+
+// ----- Images -----
+// ----- /Images -----
+
+// ----- Forms -----
+
+@form-border-color-focus: @branding-border-hover-color;
+
+@form-button-bkgd-color: @button-bkgd-color;
+@form-button-bkgd-hover-color: @button-bkgd-hover-color;
+@form-button-font-color: @button-font-color;
+@form-button-font-hover-color: @button-font-hover-color;
+
+// ----- /Forms -----
+
+// ----- Blocks -----
+
+// Tables
+@table-bkgd-color: rgb(255,255,255);
+@table-font-color: rgb(0,0,0);
+@table-btm-border-color: rgb(204,204,204);
+@table-alt-row-bkgd-color: rgb(245,245,245);
+@table-th-bkgd-color: rgb(243,138,81);
+@table-th-font-color: rgb(255,255,255);
+@table-th-border-color: rgb(245,245,245);
+
+// ----- /Blocks -----
+
+// ========== /GLOBAL ==========
+
+// ========== BODY ==========
+
+@body-bkgd-color: rgb(247,247,247);
+@body-bkgd-image: ;
+@body-bkgd-position: ;
+@body-bkgd-size: ;
+@body-bkgd-repeat: ;
+@body-bkgd-origin: ;
+@body-bkgd-attachment: ;
+
+@body-font-color: rgb(94,104,107);
+
+// ----- Wrapper -----
+
+@wrapper-bkgd-color: rgb(255,255,255);
+@wrapper-bkgd-image: ;
+@wrapper-bkgd-position: ;
+@wrapper-bkgd-size: ;
+@wrapper-bkgd-repeat: ;
+@wrapper-bkgd-origin: ;
+@wrapper-bkgd-attachment: ;
+
+// ----- /Wrapper -----
+
+// ----- Header -----
+
+@header-bkgd-color: ;
+@header-bkgd-image: ;
+@header-bkgd-position: ;
+@header-bkgd-size: ;
+@header-bkgd-repeat: ;
+@header-bkgd-origin: ;
+@header-bkgd-attachment: ;
+
+// Branding
+@branding-bkgd-color: transparent;
+@branding-font-color: rgb(119,119,119);
+@branding-font-hover-color: darken(@branding-font-color, 25%);
+@branding-border-color: @branding-font-color;
+@branding-border-hover-color: @branding-font-hover-color;
+
+// Phone
+@phone-font-color: rgb(69,77,79);
+@phone-a-font-color: @phone-font-color;
+@phone-a-font-hover-color: @phone-a-font-color;
+
+// Navigation
+@nav-level1-bkgd-color: rgb(38,38,41);
+@nav-level1-bkgd-image: ;
+@nav-level1-bkgd-position: ;
+@nav-level1-bkgd-size: ;
+@nav-level1-bkgd-repeat: ;
+@nav-level1-bkgd-origin: ;
+@nav-level1-bkgd-attachment: ;
+
+@nav-level1-a-bkgd-color: ;
+@nav-level1-a-bkgd-hover-color: ;
+@nav-level1-a-font-color: rgb(255,255,255);
+@nav-level1-a-font-hover-color: rgb(243,138,81);
+@nav-level1-a-root-bkgd-color: ;
+@nav-level1-a-root-font-color: @nav-level1-a-font-hover-color;
+@nav-level1-a-parent-bkgd-color: ;
+@nav-level1-a-parent-font-color: @nav-level1-a-font-hover-color;
+@nav-level1-a-active-bkgd-color: ;
+@nav-level1-a-active-font-color: @nav-level1-a-font-hover-color;
+
+@nav-level2-bkgd-color: rgba(38,38,41,0.9);
+@nav-level2-bkgd-image: ;
+@nav-level2-bkgd-position: ;
+@nav-level2-bkgd-size: ;
+@nav-level2-bkgd-repeat: ;
+@nav-level2-bkgd-origin: ;
+@nav-level2-bkgd-attachment: ;
+@nav-level2-btm-border-color: rgba(0,0,0,0.9);
+
+@nav-level2-a-bkgd-color: ;
+@nav-level2-a-bkgd-hover-color: ;
+@nav-level2-a-font-color: @nav-level1-a-font-color;
+@nav-level2-a-font-hover-color: @nav-level1-a-font-hover-color;
+@nav-level2-a-parent-bkgd-color: ;
+@nav-level2-a-parent-font-color: @nav-level1-a-parent-font-color;
+@nav-level2-a-active-bkgd-color: ;
+@nav-level2-a-active-font-color: @nav-level1-a-active-font-color;
+
+@nav-level3-bkgd-color: @nav-level2-bkgd-color;
+@nav-level3-bkgd-image: ;
+@nav-level3-bkgd-position: ;
+@nav-level3-bkgd-size: ;
+@nav-level3-bkgd-repeat: ;
+@nav-level3-bkgd-origin: ;
+@nav-level3-bkgd-attachment: ;
+@nav-level3-btm-border-color: @nav-level2-btm-border-color;
+
+@nav-level3-a-bkgd-color: ;
+@nav-level3-a-bkgd-hover-color: ;
+@nav-level3-a-font-color: @nav-level2-a-font-color;
+@nav-level3-a-font-hover-color: @nav-level2-a-font-hover-color;
+@nav-level3-a-active-bkgd-color: ;
+@nav-level3-a-active-font-color: @nav-level2-a-active-font-color;
+
+@nav-mobile-bkgd-color: @nav-level2-bkgd-color;
+@nav-mobile-bkgd-image: ;
+@nav-mobile-bkgd-position: ;
+@nav-mobile-bkgd-size: ;
+@nav-mobile-bkgd-repeat: ;
+@nav-mobile-bkgd-origin: ;
+@nav-mobile-bkgd-attachment: ;
+
+@nav-mobile-icon-font-color: @nav-level1-a-font-color;
+@nav-mobile-icon-font-hover-color: @nav-level1-a-font-hover-color;
+
+@nav-mobile-close-bkgd-color: @nav-level1-a-font-color;
+@nav-mobile-close-font-color: @nav-level1-bkgd-color;
+
+// ----- Header -----
+
+// ----- Main -----
+
+@main-bkgd-color: ;
+@main-bkgd-image: ;
+@main-bkgd-position: ;
+@main-bkgd-size: ;
+@main-bkgd-repeat: ;
+@main-bkgd-origin: ;
+@main-bkgd-attachment: ;
+
+// Content-Extra
+
+@extra-bkgd-color: rgb(232,234,235);
+@extra-bkgd-image: ;
+@extra-bkgd-position: ;
+@extra-bkgd-size: ;
+@extra-bkgd-repeat: ;
+@extra-bkgd-origin: ;
+@extra-bkgd-attachment: ;
+
+@extra-font-size: 24px;
+@extra-font-color: ;
+@extra-heading-color: ;
+@extra-text-align: center;
+
+// Inside
+@extra-inside-bkgd-color: ;
+@extra-inside-bkgd-image: ;
+@extra-inside-bkgd-position: ;
+@extra-inside-bkgd-size: ;
+@extra-inside-bkgd-repeat: ;
+@extra-inside-bkgd-origin: ;
+@extra-inside-bkgd-attachment: ;
+
+@extra-inside-font-size: @extra-font-size;
+@extra-inside-font-color: ;
+@extra-inside-heading-color: ;
+@extra-inside-text-align: @extra-text-align;
+
+// /Content-Extra
+
+// Feature
+
+@feature-bkgd-color: ;
+@feature-bkgd-image: url(../images/feature-bkgd.jpg);
+@feature-bkgd-position: 50% 50%;
+@feature-bkgd-size: cover;
+@feature-bkgd-repeat: no-repeat;
+@feature-bkgd-origin: initial;
+@feature-bkgd-attachment: initial;
+
+@feature-font-color: rgb(255,255,255);
+@feature-font-shadow-color: rgba(0,0,0,0.3);
+@feature-heading-color: @feature-font-color;
+@feature-text-align: center;
+
+// Inside
+@feature-inside-bkgd-color: ;
+@feature-inside-bkgd-image: ;
+@feature-inside-bkgd-position: ;
+@feature-inside-bkgd-size: ;
+@feature-inside-bkgd-repeat: ;
+@feature-inside-bkgd-origin: ;
+@feature-inside-bkgd-attachment: ;
+
+@feature-inside-font-color: ;
+@feature-inside-font-shadow-color: @feature-font-shadow-color;
+@feature-inside-heading-color: ;
+@feature-inside-text-align: @feature-text-align;
+
+// /Feature
+
+// Spotlight
+
+@spotlight-bkgd-color: ;
+@spotlight-bkgd-image: ;
+@spotlight-bkgd-position: ;
+@spotlight-bkgd-size: ;
+@spotlight-bkgd-repeat: ;
+@spotlight-bkgd-origin: ;
+@spotlight-bkgd-attachment: ;
+
+@spotlight-font-color: ;
+@spotlight-heading-color: ;
+
+// Inside
+@spotlight-inside-bkgd-color: ;
+@spotlight-inside-bkgd-image: ;
+@spotlight-inside-bkgd-position: ;
+@spotlight-inside-bkgd-size: ;
+@spotlight-inside-bkgd-repeat: ;
+@spotlight-inside-bkgd-origin: ;
+@spotlight-inside-bkgd-attachment: ;
+
+@spotlight-inside-font-color: ;
+@spotlight-inside-heading-color: ;
+
+// /Spotlight
+
+// Aside Navigation
+@aside-nav-level1-a-bkgd-color: ;
+@aside-nav-level1-a-bkgd-hover-color: ;
+@aside-nav-level1-a-lft-border-color: darken(@body-bkgd-color, 5%);
+@aside-nav-level1-a-lft-border-hover-color: darken(@aside-nav-level1-a-lft-border-color, 45%);
+@aside-nav-level1-a-font-color: @anchor-color;
+@aside-nav-level1-a-font-hover-color: @aside-nav-level1-a-lft-border-hover-color;
+@aside-nav-level1-a-parent-bkgd-color: @aside-nav-level1-a-lft-border-color;
+@aside-nav-level1-a-parent-font-color: @body-font-color;
+@aside-nav-level1-a-active-bkgd-color: @anchor-color;
+@aside-nav-level1-a-active-font-color: @wrapper-bkgd-color;
+
+@aside-nav-level2-a-font-color: @aside-nav-level1-a-font-color;
+@aside-nav-level2-a-font-hover-color: @aside-nav-level1-a-font-hover-color;
+@aside-nav-level2-a-active-bkgd-color: @aside-nav-level1-a-active-bkgd-color;
+@aside-nav-level2-a-active-font-color: @aside-nav-level1-a-active-font-color;
+
+// ----- /Main -----
+
+// ----- Footer -----
+
+@footer-bkgd-color: @body-bkgd-color;
+@footer-bkgd-image: ;
+@footer-bkgd-position: ;
+@footer-bkgd-size: ;
+@footer-bkgd-repeat: ;
+@footer-bkgd-origin: ;
+@footer-bkgd-attachment: ;
+
+@footer-font-color: rgb(140,140,140);
+
+// Social Navigation
+@footer-social-nav-a-font-color: @footer-nav-a-font-color;
+@footer-social-nav-a-font-hover-color: @footer-nav-a-font-hover-color;
+	// Facebook
+	@footer-social-nav-facebook-color: ;
+	@footer-social-nav-facebook-hover-color: ;
+	// Twitter
+	@footer-social-nav-twitter-color: ;
+	@footer-social-nav-twitter-hover-color: ;
+	// LinkedIn
+	@footer-social-nav-linkedin-color: ;
+	@footer-social-nav-linkedin-hover-color: ;
+	// Pinterest
+	@footer-social-nav-pintrest-color: ;
+	@footer-social-nav-pintrest-hover-color: ;
+	// Google
+	@footer-social-nav-googleplus-color: ;
+	@footer-social-nav-googleplus-hover-color: ;
+	// Tumblr
+	@footer-social-nav-tumblr-color: ;
+	@footer-social-nav-tumblr-hover-color: ;
+	// Instagram
+	@footer-social-nav-instagram-color: ;
+	@footer-social-nav-instagram-hover-color: ;
+	// YouTube
+	@footer-social-nav-youtube-color: ;
+	@footer-social-nav-youtube-hover-color: ;
+	// Vimeo
+	@footer-social-nav-vimeo-color: ;
+	@footer-social-nav-vimeo-hover-color: ;
+	// Phone
+	@footer-social-nav-phonenumber-color: ;
+	@footer-social-nav-phonenumber-hover-color: ;
+	// Email
+	@footer-social-nav-emailaddress-color: ;
+	@footer-social-nav-emailaddress-hover-color: ;
+	// Flickr
+	@footer-social-nav-flickr-color: ;
+	@footer-social-nav-flickr-hover-color: ;
+
+// Footer Navigation
+@footer-nav-a-font-color: @footer-font-color;
+@footer-nav-a-font-hover-color: darken(@footer-font-color, 25%);
+
+// ----- Footer -----
+
+// ========== BODY ==========

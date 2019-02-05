@@ -1,0 +1,468 @@
+/* Shopping Cart */
+
+/* product list - details */
+.productListing {
+    margin: 0 !important; 
+    width: 100% !important;
+}    
+    .productListing li {
+        font-style: normal !important;
+        background-image: none !important;
+        margin: 0 0 35px 0 !important;
+        padding: 0 0 20px 0 !important;
+        position: relative;
+        width: 100%; 
+        border: none !important;
+    }                
+            .productListing li img {
+                max-width: 100%;
+            }    
+    
+        .productListing li .productImageContainer {
+            margin-bottom: 20px;
+            max-width: 30%;    
+            float: left !important;
+            margin-right: 15px;
+        }
+
+        .productListing h3.productTitle {
+            margin: 0 !important; 
+        }        
+            .productListing h3.productTitle a {
+                font-size: 21px;
+                text-decoration: none;
+            }
+
+        .productListing h4.productType,
+        .productListing h4.productVendor {            
+            display: inline-block;
+            font-size: 14px !important;
+            font-style: italic !important;
+            font-weight: 300 !important;
+            padding: 0; 
+        }
+
+        .productListing .productDescription {
+            padding-top: 15px;
+        }
+        
+        .productListing .productPriceContainer {
+            display: block !important;
+        }            
+            .productListing .productPriceContainer .productPrice,
+            .productUnavailable,
+            .productDetailUnavailable {
+                font-size: 16px !important;
+                float: left;
+                display: block !important;
+                padding: 0 !important;
+                margin: 10px 0 0 !important;
+            }
+            
+            .productUnavailable {
+                padding-left: 30px !important;
+                font-style: italic;
+                font-size: 12px !important;
+            }
+                .productListingGrid .productUnavailable {
+                    float: none;
+                    text-align: center;
+                    padding-left: 0 !important;
+                }
+        
+    /* add to cart and select buttons */
+    .productAddToCart, 
+    a.productSelectOptions {
+        -webkit-appearance: none;
+        background: #cc5e2c !important;
+        display: inline-block !important;
+        padding: 11px 15px !important;
+        border: none !important;   
+        text-transform: uppercase; 
+        font-size: 15px;
+        color: #fff !important;  
+        cursor: pointer;
+        margin-left: 20px;
+        text-decoration: none;
+
+        -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+             -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;  
+    }
+        .productAddToCart:hover, 
+        a.productSelectOptions:hover {
+            background: #f38a51 !important;
+        }
+
+
+
+
+
+
+/* Product Listing - Grid */
+.productListingGrid {
+    margin: 0 !important; 
+    width: 100% !important;    
+}    
+    .productListingGrid li {        
+        display: block !important;
+        margin: 0 3% 1.5em 0 !important;
+        padding: 0 !important;
+         width: 30% !important; 
+        float: left !important;
+        text-align: center !important;
+        position: relative;    
+        border-bottom: none !important;
+    }    
+        .productListingGrid li span.productImageContainer {
+            margin: 0 0 10px 0 !important;
+        }
+        .productListingGrid .productFeaturedImage {
+            margin-left: 0 !important;
+        }            
+            .productListingGrid .productFeaturedImage img {
+                max-width: 100%;    
+                padding: 0 !important;
+                margin: 0 !important;
+                vertical-align: bottom;
+            }
+
+        .productListingGrid h3.productTitle,
+        .productListingGrid h3.productTitle a {
+            font-size: 15px !important;
+            line-height: 19px !important;
+            padding: 0 !important;        
+            margin: 0 0 4px 0 !important;
+        }
+        
+        .productListingGrid .productPriceContainer {
+            display: block !important;
+            padding: 0 !important;
+        }            
+            .productListingGrid .productPriceContainer .productPrice {
+                font-size: 13px !important;
+                color: #828282;
+                float: none;
+                margin-top: 0 !important;
+            }    
+
+    .productListingGrid a.productSelectOptions,
+    .productListingGrid .productAddToCart {
+        display: none !important;
+    }
+    
+
+    /* getting the grids lined up right */
+    .productListingGrid li:last-child {margin-right: 0 !important;}
+    
+    .productListingGrid li:nth-child(2n+1) {clear: none !important;}
+    .productListingGrid li:nth-child(4n) {clear: left !important;}
+    
+
+    .productListingGrid li h3.productTitle {display: block; clear: both;}
+        .productListingGrid li span.productImageContainer {padding: 0 !important;}
+        .productListingGrid li span.productImageContainer {max-width: 100%;}
+        
+        
+
+/* product more info */
+.productDetailImageContainer {
+    display: block;
+    float: right;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+    
+    .productDetailImageContainer .productDetailImageList .productDetailImage {
+        margin: 0; 
+        padding: 0;
+        width: 100% !important;    
+    }    
+    
+    .productDetailImageContainer .productDetailImageThumb {
+        padding: 0 !important;
+        margin-right: 26px !important;
+        margin-top: 10px !important;
+    }
+        
+        .productDetailImageContainer .productDetailImageThumb a {
+            padding: 0 !important;
+        }
+    
+    .productDetailImageThumb:last-child {
+        margin-right: 0 !important;
+    }
+    
+    
+/* hiding stuff i dont want */    
+.productDetailDescriptionTitle,
+.productDetailTitle {
+    display: none;
+}
+
+ul.productDetailVariantList {
+    height: 1px;
+    visibility: hidden;
+}
+
+.productDetailType,
+.productDetailVendor {
+    display: inline-block;
+    font-size: 13px !important;
+    color: #828282 !important;
+    font-style: italic;
+    font-weight: 300 !important;
+    margin-bottom: 10px !important;
+}
+
+.productDetailPrice {
+    color: #000;
+    font-size: 16px !important;
+    font-weight: 300 !important;
+}
+
+.productDetailAddToCartContainer {
+    border: 1px solid #dadada;
+    border-width: 1px 0;
+    padding: 10px 0 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 425px;
+}
+    
+    .productDetailAddToCartContainer select,
+    .productDetailAddToCartContainer #productDetailCartQuantity {
+        color: #999;
+        font-size: 13px;
+        border: 1px solid #dadada;
+        padding: 8px 10px;
+        display: block;
+    }
+    
+    span.productDetailQuantity, 
+    #productDetailCartQuantity {
+        display: inline-block !important;
+    }
+    
+
+.productDetailAddToCart { 
+    background: #cc5e2c !important;
+    display: inline-block;
+    padding: 11px 15px !important;
+    border: none !important;   
+    text-transform: uppercase; 
+    font-size: 15px;
+    color: #fff !important;    
+    margin: 0 0 0 20px !important;
+
+        -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+             -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;  
+}
+    .productDetailAddToCart:hover { 
+        background: #f38a51 !important;
+    }
+
+.productDetailDescriptionContainer {
+    width: 100%;
+    max-width: 425px !important;
+}
+
+
+
+    
+    
+/* checkout */
+.shoppingCartContainer {
+    position: relative;
+}
+
+.cartItemsCount {
+    margin: 0 0 20px 0 !important;
+    font-size: 12px !important;  
+    line-height: 15px;  
+    width: 25% !important;  
+    text-align: left !important;
+    float: left !important;
+}
+    
+.cartContinueShopping {
+    display: none !important;
+}
+
+.cartItems {
+    background: #FAFAFA;
+    width: 100%;
+    margin-bottom: 100px;
+}    
+    .cartItems th {
+        background: #fff !important; 
+        color: #2E2E2E !important; 
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 20px !important;
+        border-bottom: 1px solid #EEEEEE;
+    }
+
+.shoppingCart table tbody tr td {
+    border-bottom: 1px solid #fff !important;
+    padding: 20px !important;
+}
+
+.cartImage img {
+    border: 1px solid #fff;
+}
+
+.cartDescription a {
+    padding: 0 !important;
+    background: none !important;
+    font-size: 14px !important;
+}    
+
+.cartItemSKU {
+    font-style: italic;
+}    
+
+.cartQuantity input {
+    color: #999;
+    font-size: 14px;
+    width: 40px !important;
+    border-radius: 0 !important;
+}
+
+
+/* close button */
+.cartItems .cartQuantity a {
+    background: transparent url(images/icon-close.png) no-repeat top left !important;
+    width: 15px;
+    height: 15px;
+    text-indent: -9999px;
+    display: inline-block;
+    margin: 6px 0 0 0;  
+    position: absolute;
+}
+
+
+/* Discount Code and Checkout button Row */
+.cartUpdate {
+    background: transparent !important;
+    padding: 0 !important;
+    position: absolute;
+    right: 130px;
+    bottom: -44px !important;
+    font-size: 13px !important;
+}
+
+.cartSubtotalLabel {
+    display: none;
+}
+
+.cartSubtotalPrice {
+    font-size: 15px;
+}
+
+.cartDiscount, 
+.cartSubtotal {
+    background: #e9e9e9;
+    padding-bottom: 15px !important;
+}
+
+.cartDiscount label {
+    display: inline-block !important;
+    font-size: 12px !important;
+}
+
+.applyCode {
+    background-color: #000 !important;
+    display: inline-block;
+    background-image: none !important; 
+}    
+
+/* checkout button */
+.cartCheckoutButton {
+    position: absolute;
+    right: 0;
+    bottom: -80px !important;
+    background-color: #f38a51 !important;
+    display: inline-block;
+    padding: 11px 15px !important;
+    border: none !important;   
+    text-transform: uppercase; 
+    font-size: 15px;
+    color: #fff !important;    
+    box-shadow: 0 0 0 #fff !important;
+    border-radius: 0 0 0 !important;
+    height: 45px !important;  
+    background-image: none !important;
+
+        -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+             -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;  
+}
+    .cartCheckoutButton:hover {
+        background-color: #cc5e2c !important;
+    }
+    
+    .cartCheckoutButton input {
+        background-image: none !important;
+        text-transform: uppercase;
+        padding: 0 !important;
+    }
+  
+
+
+@media screen and (max-width: 768px) {
+    
+    /* shopping cart */
+    .shoppingCartContainer .shoppingCart p.cartItemsCount {
+        width: 90% !important;
+    }
+    
+    .shoppingCart .cartItems {
+        padding: 3% !important;
+    }
+    
+    .shoppingCart .cartImage {
+        display: none !important; 
+    }
+    
+    .shoppingCart .cartQuantity {
+        padding-right: 15px !important;
+    }
+    
+    .shoppingCart table tbody tr td {
+        padding: 0 !important; 
+        border-bottom: 0 !important;
+    }
+    
+    .shoppingCart .cartPrice,    
+    .shoppingCart .cartQuantity,
+    .shoppingCart .cartTotal {
+        margin: 0 0 15px !important; 
+    }
+        .shoppingCartContainer .shoppingCart table tbody tr td.cartQuantity a {
+            text-indent: -9999px !important; 
+            display: inline-block;
+            overflow: hidden;
+            margin-right: 50px !important;
+            font-size: .01em !important;
+        }
+    
+    .shoppingCart .cartCheckoutButton {
+        display: block !important;
+        position: relative;
+        bottom: auto !important;
+        margin-top: 50px !important;
+    }
+
+}
+
+/* /Shopping Cart */
